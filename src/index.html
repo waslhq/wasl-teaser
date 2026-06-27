@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WASL — The governed runtime for APIs and AI</title>
+  <meta name="description" content="WASL is the governed runtime plane for every API and AI call — API, AI, Event, Worker, and MCP gateways under one control plane. General availability coming early October 2026. Join the waitlist." />
+  <link rel="icon" href="brand-mark.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://waslhq.com/" />
+  <meta property="og:title" content="WASL — The governed runtime for APIs and AI" />
+  <meta property="og:description" content="One governed plane for every API and AI call. GA coming early October 2026 — join the waitlist." />
+  <meta property="og:image" content="https://waslhq.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="WASL — the governed runtime for APIs and AI" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WASL — The governed runtime for APIs and AI" />
+  <meta name="twitter:description" content="One governed plane for every API and AI call. GA early October 2026." />
+  <meta name="twitter:image" content="https://waslhq.com/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="config.js"></script>
+</head>
+<body>
+  <div class="aurora" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+  </div>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <img class="hero-mark reveal" data-reveal src="brand-mark.svg" alt="WASL" width="64" height="64" />
+      <span class="badge reveal" data-reveal><span class="dot"></span> Coming early October 2026</span>
+      <h1 class="reveal" data-reveal>The governed runtime<br />for <span class="grad">APIs&nbsp;and&nbsp;AI</span>.</h1>
+      <p class="lede reveal" data-reveal>One control plane for every API call, model request, event, job, and agent tool — authenticated, governed, and audited.</p>
+      <a class="scroll-cue reveal" data-reveal href="#api" aria-label="Explore capabilities">Explore the platform ↓</a>
+    </section>
+
+    <!-- CAPABILITY SECTIONS -->
+    <section id="api" class="cap">
+      <div class="cap-inner reveal" data-reveal>
+        <span class="num">01</span>
+        <p class="eyebrow">API Gateway</p>
+        <h2>Route and govern every API call.</h2>
+        <p class="cap-sub">HTTP routing with a JavaScript flow runtime and 24 built-in policies — auth, rate limits, transforms, and audit attached to every route.</p>
+      </div>
+    </section>
+
+    <section id="ai" class="cap alt">
+      <div class="cap-inner reveal" data-reveal>
+        <span class="num">02</span>
+        <p class="eyebrow">AI Gateway</p>
+        <h2>One endpoint for every model.</h2>
+        <p class="cap-sub">OpenAI-compatible access to OpenAI, Anthropic, Gemini, and Bedrock — with quotas, cost caps, guardrails, PII redaction, and a semantic cache.</p>
+      </div>
+    </section>
+
+    <section id="event" class="cap">
+      <div class="cap-inner reveal" data-reveal>
+        <span class="num">03</span>
+        <p class="eyebrow">Event Gateway</p>
+        <h2>Streaming over plain HTTP.</h2>
+        <p class="cap-sub">Produce and consume event streams with SSE and long-poll — governed, multi-tenant, and broker-agnostic.</p>
+      </div>
+    </section>
+
+    <section id="worker" class="cap alt">
+      <div class="cap-inner reveal" data-reveal>
+        <span class="num">04</span>
+        <p class="eyebrow">Worker</p>
+        <h2>Async work that never blocks the request.</h2>
+        <p class="cap-sub">A job runtime for long-running flows, scheduled tasks, and event-driven fan-out — scaled independently of your traffic.</p>
+      </div>
+    </section>
+
+    <section id="mcp" class="cap">
+      <div class="cap-inner reveal" data-reveal>
+        <span class="num">05</span>
+        <p class="eyebrow">MCP Gateway</p>
+        <h2>Governed tools for AI agents.</h2>
+        <p class="cap-sub">Expose your APIs as Model Context Protocol tools — scoped per agent, token-exchanged, and audited on every call.</p>
+      </div>
+    </section>
+
+    <section id="governance" class="cap alt">
+      <div class="cap-inner reveal" data-reveal>
+        <span class="num">06</span>
+        <p class="eyebrow">Governance</p>
+        <h2>Control that travels with every call.</h2>
+        <p class="cap-sub">Credential-bound identity, fail-closed OAuth 2.1, multi-tenant isolation, and an immutable audit log — the same spine across every runtime.</p>
+      </div>
+    </section>
+
+    <section id="control" class="cap">
+      <div class="cap-inner reveal" data-reveal>
+        <span class="num">07</span>
+        <p class="eyebrow">Studio &amp; Portal</p>
+        <h2>Design, deploy, and observe — in one place.</h2>
+        <p class="cap-sub">WASL Studio to build and operate, plus a developer portal with API keys, catalogs, analytics, and an OAuth 2.1 authorization server.</p>
+      </div>
+    </section>
+
+    <!-- WAITLIST -->
+    <section id="waitlist" class="cap cta">
+      <div class="cap-inner reveal" data-reveal>
+        <p class="eyebrow">Early access</p>
+        <h2>Be first when WASL ships.</h2>
+        <p class="cap-sub">General availability — <strong>early October 2026</strong>. Join the waitlist for early access and launch invites.</p>
+        <form id="waitlistForm" class="waitlist" novalidate>
+          <input id="email" type="email" name="email" inputmode="email" autocomplete="email"
+                 placeholder="you@company.com" aria-label="Work email" required />
+          <button class="btn btn-primary" type="submit">Request early access →</button>
+        </form>
+        <p id="waitlistMessage" class="waitlist-msg" role="status" aria-live="polite"></p>
+        <p class="trust">One email when we launch. Nothing else.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#top" aria-label="WASL home"><img src="brand-mark.svg" alt="" width="24" height="24" /><span>WASL</span></a>
+    <nav class="footer-links" id="socialLinks" aria-label="Social"></nav>
+    <span class="footer-fine">© <span id="year"></span> WASL</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
