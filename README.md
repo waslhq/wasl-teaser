@@ -5,8 +5,10 @@ A premium, single-page **pre-GA teaser** for the WASL platform — deliberately 
 soon" showcase and join the waitlist, rather than incomplete product pages before General
 Availability (Summer 2026).
 
-- **Dark cinematic** single page: hero, the five runtimes (API / AI / Event / Worker / MCP),
-  the governance story, and a waitlist CTA.
+- **Dark cinematic** single page, positioned around the **AI-governance + MCP wedge**: the hero
+  leads with the "one policy plane for every model and agent call" story, then AI Gateway → MCP
+  Gateway → Governance, followed by the rest of the plane (API / Event / Worker / Studio), and a
+  waitlist CTA.
 - **Vanilla** HTML/CSS/JS — no framework, no build dependencies. Mirrors `wasl-web`'s deploy story.
 - **On-brand**: WASL brand-sheet palette (Signal Blue → Flow Teal) and brand mark.
 

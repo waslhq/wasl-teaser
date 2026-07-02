@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-label="WASL — the governed runtime for APIs and AI">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-label="WASL — the governed runtime for AI and agents">
   <defs>
     <linearGradient id="wm" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#3B82F6"/>
@@ -46,11 +46,11 @@
     <!-- headline -->
     <text x="80" y="270" font-family="Helvetica Neue, Arial, sans-serif" font-size="62" font-weight="700" fill="#f8fafc" letter-spacing="-1">The governed runtime</text>
     <text x="80" y="346" font-family="Helvetica Neue, Arial, sans-serif" font-size="62" font-weight="700" letter-spacing="-1">
-      <tspan fill="#f8fafc">for </tspan><tspan fill="url(#txt)">APIs and AI.</tspan>
+      <tspan fill="#f8fafc">for </tspan><tspan fill="url(#txt)">AI and agents.</tspan>
     </text>
 
     <!-- subline -->
-    <text x="82" y="410" font-family="Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="500" fill="#aab6c6">API · AI · Event · Worker · MCP — one governed plane.</text>
+    <text x="82" y="410" font-family="Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="500" fill="#aab6c6">AI · Agents · APIs — one governed plane.</text>
 
     <!-- GA badge -->
     <g transform="translate(80,470)">
