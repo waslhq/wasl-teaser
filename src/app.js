@@ -7,14 +7,17 @@ async function submitWaitlist(email) {
   const endpoint = wl.endpoint;
   if (!endpoint) return { ok: true, mode: 'local' };
 
-  const fieldMap = wl.fieldMap || {};
-  const payload = {};
-  payload[fieldMap.email || 'email'] = email;
-  if (fieldMap.source && wl.source) payload[fieldMap.source] = wl.source;
+  const payload = {
+    appId: wl.appId || 'wasl',
+    name: '',
+    email,
+    phone: '',
+    metadata: { source: wl.source || 'wasl-teaser', submittedAt: new Date().toISOString() }
+  };
 
   const res = await fetch(endpoint, {
-    method: (wl.method || 'POST').toUpperCase(),
-    headers: { 'Content-Type': wl.contentType || 'application/json' },
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload)
   });
   if (!res.ok) {

@@ -4,128 +4,153 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>WASL — The governed runtime for AI and agents</title>
-  <meta name="description" content="WASL is the governed front door for AI and agents — one policy plane, one audit trail, one cost ledger for every model request and every MCP tool-call, extending to your APIs, events, and jobs. General availability coming early October 2026. Join the waitlist." />
+  <meta name="description" content="WASL is the governed front door for AI and agents — one policy plane, one audit trail, one cost ledger for every model request and every MCP tool-call, extending to your APIs, events, jobs and backend connectors. General availability coming in Q4 2026. Join the waitlist." />
   <link rel="icon" href="brand-mark.svg" type="image/svg+xml" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://waslhq.com/" />
   <meta property="og:title" content="WASL — The governed runtime for AI and agents" />
-  <meta property="og:description" content="One policy plane, one audit trail, one cost ledger for every model request and every agent tool-call. GA coming early October 2026 — join the waitlist." />
+  <meta property="og:description" content="One policy plane, one audit trail, one cost ledger for every model request and every agent tool-call. GA coming in Q4 2026 — join the waitlist." />
   <meta property="og:image" content="https://waslhq.com/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="WASL — the governed runtime for AI and agents" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="WASL — The governed runtime for AI and agents" />
-  <meta name="twitter:description" content="One policy plane for every model request and every agent tool-call. GA early October 2026." />
+  <meta name="twitter:description" content="One policy plane for every model request and every agent tool-call. GA in Q4 2026." />
   <meta name="twitter:image" content="https://waslhq.com/og-image.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script src="config.js"></script>
 </head>
 <body>
-  <div class="aurora" aria-hidden="true">
-    <span class="orb orb-1"></span>
-    <span class="orb orb-2"></span>
-  </div>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="page" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a class="wordmark" href="#top" aria-label="WASL home"><svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" aria-hidden="true"><path d="M6 8v16"/><path d="M26 8v16"/><path d="M14.6 11.6h-1.6a4.4 4.4 0 0 0 0 8.8h1.6"/><path d="M17.4 11.6h1.6a4.4 4.4 0 0 1 0 8.8h-1.6"/><path d="M13.4 16h5.2"/></svg><span>wasl</span></a>
+      <div class="nav-links">
+        <a href="#platform">Platform</a>
+        <a href="#connect">Integrations</a>
+        <a href="#control">Control plane</a>
+        <a href="#waitlist">Early access</a>
+      </div>
+      <a class="btn btn-primary" href="#waitlist">Join the waitlist</a>
+    </nav>
 
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero">
-      <img class="hero-mark reveal" data-reveal src="brand-mark.svg" alt="WASL" width="64" height="64" />
-      <span class="badge reveal" data-reveal><span class="dot"></span> Coming early October 2026</span>
-      <h1 class="reveal" data-reveal>The governed runtime<br />for <span class="grad">AI&nbsp;and&nbsp;agents</span>.</h1>
-      <p class="lede reveal" data-reveal>One policy plane, one audit trail, one cost ledger for every model request and every agent tool-call — and the same plane governs your APIs, events, and jobs.</p>
-      <a class="scroll-cue reveal" data-reveal href="#ai" aria-label="Explore capabilities">Explore the platform ↓</a>
-    </section>
+    <header class="hero">
+      <div class="chip reveal" data-reveal><span class="tag">SOON</span> General availability · Q4 2026</div>
+      <h1 class="reveal" data-reveal>The governed runtime <br />for AI and agents.</h1>
+      <p class="lede reveal" data-reveal>One policy plane, one audit trail, one cost ledger for every model request and every agent tool-call — extending to your APIs, events and jobs.</p>
+      <div class="actions reveal" data-reveal>
+        <a class="btn btn-primary btn-lg" href="#waitlist">Request early access</a>
+        <a class="btn btn-ghost btn-lg" href="#platform">Explore the platform</a>
+      </div>
 
-    <!-- CAPABILITY SECTIONS — lead with the AI + agent governance wedge -->
-    <section id="ai" class="cap">
-      <div class="cap-inner reveal" data-reveal>
-        <span class="num">01</span>
-        <p class="eyebrow">AI Gateway</p>
-        <h2>Govern every model call.</h2>
-        <p class="cap-sub">OpenAI-compatible access to OpenAI, Anthropic, Gemini, and Bedrock — with quotas, cost caps, guardrails, PII redaction, and a semantic cache. Every request authenticated, priced, and audited.</p>
+      <div class="slab reveal" data-reveal><div class="window" aria-label="Illustrative product preview">
+        <div class="chrome"><i></i><i></i><i></i><span class="mono url">studio.waslhq.com / decisions</span><span class="mono note">Illustrative</span></div>
+        <div class="table">
+          <div class="row th mono"><span>Request</span><span>Policy</span><span>Agent</span><span>Decision</span></div>
+          <div class="row"><span class="mono id">req_8f31c0</span><span>pii.redact</span><span class="mono dim">support-bot</span><span><em class="pill ok">ALLOW</em></span></div>
+          <div class="row"><span class="mono id">req_8f31be</span><span>tool.exec.shell</span><span class="mono dim">devops-agent</span><span><em class="pill no">DENY</em></span></div>
+          <div class="row"><span class="mono id">req_8f31bb</span><span>spend.cap.daily</span><span class="mono dim">research-crew</span><span><em class="pill warn">REVIEW</em></span></div>
+        </div>
+      </div></div>
+    </header>
+
+    <section id="platform" class="section wrap">
+      <div class="center-head reveal" data-reveal>
+        <p class="eyebrow">The platform</p>
+        <h2>One platform. Every kind of traffic.</h2>
+        <p class="sub">A single governed spine for models, agents and services — so policy, identity and cost look the same everywhere.</p>
+      </div>
+      <div class="pgrid">
+        <article class="pcard blue reveal" data-reveal>
+          <div class="ptop"><span class="pname">AI Gateway</span><span class="pidx mono">01</span></div>
+          <div><h3>Govern every model call</h3><p>OpenAI-compatible access to OpenAI, Anthropic, Gemini and Bedrock — with quotas, cost caps, guardrails, PII redaction and a semantic cache.</p></div>
+        </article>
+        <article class="pcard yellow reveal" data-reveal>
+          <div class="ptop"><span class="pname">MCP Gateway</span><span class="pidx mono">02</span></div>
+          <div><h3>A front door for your agents</h3><p>Expose APIs and flows as MCP tools — scoped per agent, token-exchanged, rate-limited and audited on every call.</p></div>
+        </article>
+        <article class="pcard green reveal" data-reveal>
+          <div class="ptop"><span class="pname">API Gateway</span><span class="pidx mono">03</span></div>
+          <div><h3>Route and govern every call</h3><p>HTTP routing with a JavaScript flow runtime and 24 built-in policies for auth, rate limits, transforms and audit.</p></div>
+        </article>
+        <article class="pcard red reveal" data-reveal>
+          <div class="ptop"><span class="pname">Event Gateway</span><span class="pidx mono">04</span></div>
+          <div><h3>Streaming over plain HTTP</h3><p>Produce and consume event streams with SSE and long-poll — governed, multi-tenant and broker-agnostic.</p></div>
+        </article>
+        <article class="pcard blue reveal" data-reveal>
+          <div class="ptop"><span class="pname">Worker</span><span class="pidx mono">05</span></div>
+          <div><h3>Async work, off the request path</h3><p>A job runtime for long-running flows, scheduled tasks and event-driven fan-out, scaled independently of your traffic.</p></div>
+        </article>
+        <article class="pcard yellow reveal" data-reveal>
+          <div class="ptop"><span class="pname">Studio &amp; Portal</span><span class="pidx mono">06</span></div>
+          <div><h3>Design, deploy and observe</h3><p>WASL Studio to build and operate, plus a developer portal with API keys, catalogs, analytics and an OAuth 2.1 server.</p></div>
+        </article>
       </div>
     </section>
 
-    <section id="mcp" class="cap alt">
-      <div class="cap-inner reveal" data-reveal>
-        <span class="num">02</span>
-        <p class="eyebrow">MCP Gateway</p>
-        <h2>Put a front door on your AI agents.</h2>
-        <p class="cap-sub">Expose your APIs and flows as Model Context Protocol tools — scoped per agent, token-exchanged, rate-limited, and audited on every call. The governance layer agents don't ship with.</p>
+    <section id="connect" class="section wrap">
+      <div class="connect reveal" data-reveal>
+        <div class="connect-copy">
+          <p class="eyebrow">Integrations</p>
+          <h2>Connect the systems you already run.</h2>
+          <p class="sub">Backend connectivity ships as plugins on one SDK — databases, brokers, search, storage and HTTP — so agents and APIs reach approved data through the same governed path.</p>
+        </div>
+        <ul class="chips" aria-label="Supported connectors"><li class="cchip blue">PostgreSQL · JDBC</li><li class="cchip yellow">Kafka</li><li class="cchip green">MongoDB</li><li class="cchip red">Redis</li><li class="cchip blue">RabbitMQ</li><li class="cchip yellow">OpenSearch</li><li class="cchip green">pgvector</li><li class="cchip red">Object storage</li><li class="cchip blue">MQTT</li><li class="cchip yellow">AWS messaging</li><li class="cchip green">Any HTTP API</li></ul>
       </div>
     </section>
 
-    <section id="governance" class="cap">
-      <div class="cap-inner reveal" data-reveal>
-        <span class="num">03</span>
+    <section id="operate" class="section wrap">
+      <div class="center-head reveal" data-reveal>
+        <p class="eyebrow">Built to operate</p>
+        <h2>Runs where your business needs it.</h2>
+        <p class="sub">Separate management from traffic, place runtimes in your infrastructure, and keep every change reviewable.</p>
+      </div>
+      <div class="ops">
+        <div class="op reveal" data-reveal><span class="opn mono">01</span><h3>Fleets &amp; immutable revisions</h3><p>Every change is a versioned revision bound to a fleet — deploy, promote and roll back atomically.</p></div>
+        <div class="op reveal" data-reveal><span class="opn mono">02</span><h3>Runtimes that fail apart</h3><p>API, AI, Event, Worker and MCP run as separate processes, so a slow model call never slows your APIs.</p></div>
+        <div class="op reveal" data-reveal><span class="opn mono">03</span><h3>Multi-tenant by design</h3><p>Tenant isolation with role-based access, so teams and customers share a platform, not each other’s data.</p></div>
+        <div class="op reveal" data-reveal><span class="opn mono">04</span><h3>Kubernetes-native</h3><p>Helm workloads, health probes, network policies and resource limits — placed where your business needs them.</p></div>
+        <div class="op reveal" data-reveal><span class="opn mono">05</span><h3>Pick the cheapest path</h3><p>Each API chooses direct proxy, transform, composition, scripted flow or mock — only as heavy as it needs to be.</p></div>
+        <div class="op reveal" data-reveal><span class="opn mono">06</span><h3>See what happened</h3><p>Distributed tracing, metrics and usage analytics, with revisions and connections you can inspect in Studio.</p></div>
+      </div>
+    </section>
+
+    <section id="control" class="section wrap">
+      <div class="center-head reveal" data-reveal>
         <p class="eyebrow">One control plane</p>
-        <h2>One policy plane for every kind of traffic.</h2>
-        <p class="cap-sub">Credential-bound identity, fail-closed OAuth 2.1, multi-tenant isolation, cost accounting, and an immutable audit log — the same spine across AI, agents, and APIs.</p>
+        <h2>Govern once. Enforce everywhere.</h2>
+      </div>
+      <div class="pillars">
+        <div class="pillar reveal" data-reveal><span class="pn blue mono">01</span><h3>Identity you can trust</h3><p>Credential-bound identity and fail-closed OAuth 2.1 on every request, model call and tool-call.</p></div>
+        <div class="pillar reveal" data-reveal><span class="pn yellow mono">02</span><h3>Isolation by default</h3><p>Multi-tenant isolation and per-agent scopes keep every team, key and tool inside its own lane.</p></div>
+        <div class="pillar reveal" data-reveal><span class="pn green mono">03</span><h3>Every decision on record</h3><p>An immutable audit log and a single cost ledger — priced, attributed and exportable.</p></div>
       </div>
     </section>
 
-    <section id="api" class="cap alt">
-      <div class="cap-inner reveal" data-reveal>
-        <span class="num">04</span>
-        <p class="eyebrow">API Gateway</p>
-        <h2>Route and govern every API call.</h2>
-        <p class="cap-sub">HTTP routing with a JavaScript flow runtime and 24 built-in policies — auth, rate limits, transforms, and audit attached to every route.</p>
-      </div>
-    </section>
-
-    <section id="event" class="cap">
-      <div class="cap-inner reveal" data-reveal>
-        <span class="num">05</span>
-        <p class="eyebrow">Event Gateway</p>
-        <h2>Streaming over plain HTTP.</h2>
-        <p class="cap-sub">Produce and consume event streams with SSE and long-poll — governed, multi-tenant, and broker-agnostic.</p>
-      </div>
-    </section>
-
-    <section id="worker" class="cap alt">
-      <div class="cap-inner reveal" data-reveal>
-        <span class="num">06</span>
-        <p class="eyebrow">Worker</p>
-        <h2>Async work that never blocks the request.</h2>
-        <p class="cap-sub">A job runtime for long-running flows, scheduled tasks, and event-driven fan-out — scaled independently of your traffic.</p>
-      </div>
-    </section>
-
-    <section id="control" class="cap">
-      <div class="cap-inner reveal" data-reveal>
-        <span class="num">07</span>
-        <p class="eyebrow">Studio &amp; Portal</p>
-        <h2>Design, deploy, and observe — in one place.</h2>
-        <p class="cap-sub">WASL Studio to build and operate, plus a developer portal with API keys, catalogs, analytics, and an OAuth 2.1 authorization server.</p>
-      </div>
-    </section>
-
-    <!-- WAITLIST -->
-    <section id="waitlist" class="cap cta">
-      <div class="cap-inner reveal" data-reveal>
+    <section id="waitlist" class="section wrap">
+      <div class="cta reveal" data-reveal>
         <p class="eyebrow">Early access</p>
         <h2>Be first when WASL ships.</h2>
-        <p class="cap-sub">General availability — <strong>early October 2026</strong>. Join the waitlist for early access and launch invites.</p>
+        <p class="sub">General availability — <strong>Q4 2026</strong>. Join the waitlist for early access and launch invites.</p>
         <form id="waitlistForm" class="waitlist" novalidate>
-          <input id="email" type="email" name="email" inputmode="email" autocomplete="email"
-                 placeholder="you@company.com" aria-label="Work email" required />
-          <button class="btn btn-primary" type="submit">Request early access →</button>
+          <input id="email" type="email" name="email" inputmode="email" autocomplete="email" placeholder="you@company.com" aria-label="Work email" required />
+          <button class="btn btn-primary btn-lg" type="submit">Request early access</button>
         </form>
         <p id="waitlistMessage" class="waitlist-msg" role="status" aria-live="polite"></p>
         <p class="trust">One email when we launch. Nothing else.</p>
       </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <a class="brand" href="#top" aria-label="WASL home"><img src="brand-mark.svg" alt="" width="24" height="24" /><span>WASL</span></a>
-    <nav class="footer-links" id="socialLinks" aria-label="Social"></nav>
-    <span class="footer-fine">© <span id="year"></span> WASL</span>
-  </footer>
+    <footer class="footer">
+      <a class="wordmark small" href="#top" aria-label="WASL home"><svg viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" aria-hidden="true"><path d="M6 8v16"/><path d="M26 8v16"/><path d="M14.6 11.6h-1.6a4.4 4.4 0 0 0 0 8.8h1.6"/><path d="M17.4 11.6h1.6a4.4 4.4 0 0 1 0 8.8h-1.6"/><path d="M13.4 16h5.2"/></svg><span>wasl</span></a>
+      <nav class="footer-links" id="socialLinks" aria-label="Social"></nav>
+      <span class="footer-fine">© <span id="year"></span> WASL · A product by <a href="https://nayma.ai" target="_blank" rel="noreferrer">NAYMA</a></span>
+    </footer>
+  </div>
 
   <script src="app.js"></script>
 </body>
