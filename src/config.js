@@ -1,12 +1,10 @@
-// WASL Teaser — runtime config. Reuses the shared waitlist endpoint, tagged so
-// teaser signups are distinguishable from the main site. Safe to commit (no secrets).
+// WASL Teaser — runtime config. Posts to the shared NAYMA lead-capture service, tagged
+// appId "wasl" so teaser signups are distinguishable. Safe to commit (no secrets).
 window.WASL_TEASER_CONFIG = {
   waitlist: {
-    endpoint: 'https://wasl-waitlist-notification-23987395973.me-central1.run.app/',
-    method: 'POST',
-    contentType: 'application/json',
-    source: 'wasl-teaser',
-    fieldMap: { email: 'email', source: 'source' }
+    endpoint: 'https://nayma-unified-leads-capture-795256461991.me-central1.run.app/',
+    appId: 'wasl',
+    source: 'wasl-teaser'
   },
   links: {
     github: 'https://github.com/waslhq',
